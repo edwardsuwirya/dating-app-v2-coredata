@@ -22,6 +22,6 @@ public class DataAssembly: Assembly{
                 }
             })
             return dbContainer.viewContext
-        }
+        }.inObjectScope(.container)
     }
 }
